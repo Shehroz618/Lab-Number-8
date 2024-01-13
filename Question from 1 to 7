@@ -1,0 +1,183 @@
+Question No 1:
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables to store the input numbers
+    double num1, num2, sum;
+
+    // Prompt the user to enter the first number
+    printf("Enter the first number: ");
+    
+    // Read the first number from the keyboard
+    scanf("%lf", &num1);
+
+    // Prompt the user to enter the second number
+    printf("Enter the second number: ");
+    
+    // Read the second number from the keyboard
+    scanf("%lf", &num2);
+
+    // Calculate the sum of the two numbers
+    sum = num1 + num2;
+
+    // Display the result
+    printf("Sum: %.2lf\n", sum);
+
+    return 0;
+}
+
+-------------------------------------
+
+Question No 2:
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Declare variables
+    double radius, area;
+
+    // Prompt the user to enter the radius of the circle
+    printf("Enter the radius of the circle: ");
+    
+    // Read the radius from the keyboard
+    scanf("%lf", &radius);
+
+    // Calculate the area of the circle (π * radius^2)
+    area = M_PI * pow(radius, 2);
+
+    // Display the result
+    printf("Area of the circle with radius %.2lf: %.2lf\n", radius, area);
+
+    return 0;
+}
+
+--------------------------------------
+Question No 3:
+
+#include <stdio.h>
+
+int main() {
+    // Declare variable to store the input number
+    int N;
+
+    // Prompt the user to enter the number
+    printf("Enter a number: ");
+    
+    // Read the number from the keyboard
+    scanf("%d", &N);
+
+    // Check if the number is even or odd
+    if (N % 2 == 0) {
+        printf("%d is an even number.\n", N);
+    } else {
+        printf("%d is an odd number.\n", N);
+    }
+
+    return 0;
+}
+
+------------------------------------------
+
+Question No 4:
+
+#include <stdio.h>
+
+int main() {
+    // Declare variable to store the temperature
+    float temperature;
+
+    // Prompt the user to enter the temperature
+    printf("Enter the temperature: ");
+    
+    // Read the temperature from the keyboard
+    scanf("%f", &temperature);
+
+    // Check if the temperature is below or above the freezing point (0 degrees Celsius)
+    if (temperature < 0) {
+        printf("The temperature is below freezing point.\n");
+    } else {
+        printf("The temperature is above freezing point.\n");
+    }
+
+    return 0;
+}
+
+------------------------------------------
+
+Question No 5:
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables to store temperatures
+    float fahrenheit, celsius;
+
+    // Prompt the user to enter the temperature in Fahrenheit
+    printf("Enter the temperature in Fahrenheit: ");
+    
+    // Read the temperature from the keyboard
+    scanf("%f", &fahrenheit);
+
+    // Convert Fahrenheit to Celsius using the formula: (F - 32) * 5/9
+    celsius = (fahrenheit - 32) * 5 / 9;
+
+    // Display the result
+    printf("%.2f Fahrenheit is %.2f Celsius.\n", fahrenheit, celsius);
+
+    return 0;
+}
+
+--------------------------------------------
+
+Question No 6:
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables to store lengths
+    float feet, centimeters;
+
+    // Prompt the user to enter the length in feet
+    printf("Enter the length in feet: ");
+    
+    // Read the length from the keyboard
+    scanf("%f", &feet);
+
+    // Convert feet to centimeters using the conversion factor: 1 foot = 30.48 centimeters
+    centimeters = feet * 30.48;
+
+    // Display the result
+    printf("%.2f feet is equal to %.2f centimeters.\n", feet, centimeters);
+
+    return 0;
+}
+
+-----------------------------------------------
+
+Question No 7:
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables to store the three numbers
+    float A, B, C;
+
+    // Prompt the user to enter the three numbers
+    printf("Enter three numbers (A, B, C): ");
+    
+    // Read the numbers from the keyboard
+    scanf("%f %f %f", &A, &B, &C);
+
+    // Check and find the largest number
+    if (A >= B && A >= C) {
+        printf("The largest number is A: %.2f\n", A);
+    } else if (B >= A && B >= C) {
+        printf("The largest number is B: %.2f\n", B);
+    } else {
+        printf("The largest number is C: %.2f\n", C);
+    }
+
+    return 0;
+}
